@@ -1,0 +1,22 @@
+This file documents known problems with specific terminals and
+workarounds.
+
+Testing is primary done on the linux console and sometimes on xterm; they
+both seem to work perfectly.  Since I'm not a terminals wizard I'll make 
+the convenient assumtion that other terminals (or curses) aree to blame 
+and zis is OK ;-)
+
+nxterm works just as well as xterm.
+
+konsole and gnome-terminal leave debris on screen, especially during
+animations.  Disabling animations helps but not completely.  Setting
+TERM=vt100 (for black&white interface) or TERM=xterm-color (for colors) in
+the envirnoment seems to solve all problems (except for them being so slow
+relative to xterm ;-)
+
+rxvt shows black on black (i.e. invisible) text.  This is caused by it
+exporting the COLORFGBG environment variable and ncurses paying attention
+to it (I didn't figure out who is to blame but the bottom line is that
+there is a misunderstanding between them ;-).  Setting COLORFGBG='15;0' 
+seems to help; running rxvt -rv (reverse video mode) also solves the 
+problem; also with TERM=vt100 it works fine (but without colors).

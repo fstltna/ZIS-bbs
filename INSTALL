@@ -1,0 +1,15 @@
+On windows, run the installer.
+
+If you want to compile on dos you need DJGPP, PDCurses, a menu library clone
+(e.g. from the ncurses sources) and m4.  cygwin32 could probably work too with
+little source changes.  Running `make' should do the job.  For the win
+installer you need Nullsoft's NSIS; put cwsdpmi.exe into a `bundle/' subdir;
+run `make windist'.
+NOTE: In current version the DOS build seems *broken*.  I'm investigating
+alternatives...
+
+On unix, run `make'.  You need GNU make (maybe called `gmake' on your
+system)!  No `make install' provided but all you have to do for
+system-wide install is to put `zis' somewhere into the path...  (Don't
+make it setuid root or anything - there is no need and it will be very
+insecure!)

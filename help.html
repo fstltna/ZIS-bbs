@@ -1,0 +1,298 @@
+<!doctype html public "-//w3c//dtd html 4.0 final//en">   <!-- -*- html -*- -->
+<html>
+<head>
+<title>Help for ZIS 0.99.5</title> <!-- @RELEASE@ -->
+<style type="text/css">
+  h1, h2
+  {
+     text-align: center;
+     color: blue
+  }
+  dt
+  {
+     color: blue
+  }
+</style>
+</head>
+<body>
+<!-- center --><h1>Help for ZIS - Zionist In Space 0.99.5</h1> <!-- @RELEASE@ -->
+
+<h2><a name="wiz">What is ZIS</a></h2>
+<h2>Table of contents</h2><!-- /center -->
+<!-- this is a bogus list of contents -->
+<a href="index.html">Main page</a>
+<ol type="I">
+  <li><a href="#wiz">What is ZIS</a>
+      <ol type="1">
+        <li><a href="#his"> Historical setting</a></li>
+        <li><a href="#atn">About the name</a></li>
+        <li><a href="#wit">Well what is that ?</a></li>
+        <li><a href="#brs">Basic rules</a></li>
+        <li><a href="#wig">What is it good for ?!</a></li>
+      </ol>
+  </li>
+  <li><a href="#ui">User interface</a>
+      <ol>
+        <li><a href="#gcs">Game commands</a></li>
+        <li><a href="#sgs">Special commands</a></li>
+        <li><a href="#opt">Options</a></li>
+      </ol>
+  </li>
+  <li><a href="#smr">System requirements</a></li>
+  <li><a href="#crs">Credits</a></li>
+  <li><a href="#tdo">To-Do</a></li>
+</ol>
+<h3><a name="his">Historical setting</a></h3>
+<p>
+ZIS is a turn based strategy game for multiple players.  It is a
+<b>console</b> version of the game <b>Konquest</b> (a game for KDE) which in
+his turn was based on a old game called <b>galactic conquest</b> from 1987
+that was a game for MS-DOS (which was actually much more similar to ZIS)
+</p>
+<h3><a name="atn">About the name</a></h3>
+<p>
+ZIS is <b>Zionist In Space</b>. The name was based upon a role playing game
+that I with Barak Katzir and Tomer Razikovetsky invented in school. The general
+idea is sort of a parody about the situation in Israel (where we live). You have
+super heroes like <b>Israman</b> and <b>Liberman</b> which are good and you have
+<b>Meretzman</b> (based on the name of a local political movement that wants
+peace at all costs and easily betraying the country for money or anything else...)
+and <b>Yaser</b> who is the leader of the Palestinian autonomy. Well unfortunately
+you don't get it in this version because it requires AI but it will appear in the
+2.00 version as a <b>single player campign</b>. Because of the fact that the game
+is dealing with space and planets... We decided to take the campign into the
+'stars' and make it Zionist In <b>Space</b>. But except of several nice maps you
+wan't get a lot of related things in the game to I'ts name.
+If you have been wandering so yes the game does carries a political cause and
+we hope that you will agree but if you don't so that is not our problem you can
+just not play it.
+</p>
+<h3><a name="wit">Well what is it ?</a></h3>
+<p>
+This is a <b>turn based strategy</b> with up to 64 players which can be played
+on one computer. The goal of the game is no less then achieve total dominance
+over the <b>galaxy</b> by taking over planets.  planets are producing ships at
+a constant rate -> that is the main force the player has in this game. With
+the ships he can go and fight for other planets or defend his own. The game
+has an ability to save and load games which is good for long games that can
+take for up to 5 hours or even more.
+</p>
+<h3><a name="brs">Basic rules</a></h3>
+<p>
+There are planets which produce ships on a constant rate.  The planets have
+owners e.g. neutral, foo, bar... the player can send ships to other
+planets. The ships arrive after a given amount of time (depending on the
+distance between the planets).
+</p>
+<p> The planets have a <b>kill ratio</b> when in battle they kill ratio
+determines how efficiently they battle.  Defending ships take the ratio of the
+defended planet and attacking ships take the ration of the planet they ware
+sent from.  Suppose you have <b>5</b> ships with a kill ratio of <b>0.8</b> and
+the enemy has <b>10</b> ships with a kill ratio of <b>0.4</b> the result will
+be equal because your kill ratio is twice the size of his kill ratio but he
+has twice your ships.  The planet will keep its owner.  Now suppose the you
+have <b>10</b> ships with <b>0.3</b> kill ration and the enemy has <b>8</b>
+ships with <b>0.75</b> kill ratio.  So your powers are <b>3</b>:<b>6</b> and
+he will win.  He will lose half of his ships while you will lose all your
+ships.  The same amount of ships becomes more powerful when sent from stronger
+planets...
+</p>
+<p>
+There is the <b>morale</b>. The morale affects ship production and base.
+construction it is affected by battles that were hard for the planet.<br>
+<em>The relation of the ship destruction on planet.</em> the more ships
+sombody destroyed on a planet with an attack the more morale decreased on that
+planet.
+<br>
+Morale rises <b>every turn</b>.
+</p>
+<h3><a name="wig">What is it good for ?!</a></h3>
+<p>
+Well, I started working on it about 2 weeks from the point when I saw Konquest
+because I was quite impressed. ZIS from what I saw is a fine game for 2-5
+or even 2-8 people (even if it supports 64) and it is one of the few games
+that you can play on a single computer with your friends which is quite rare
+because there not that much multi-player games on a single computer which are
+worth playing !
+</p>
+<p>
+The good part is that it can be played from 5-10 min when you don't have much
+time and even for several hours without losing or stopping. The bad part is
+that if you play with more then 4-5 people you have intervals of about
+<b>15</b> min from turn to turn and that is quite annoying so I think the best
+way to play it is with <b>3-4</b> people.
+</p>
+<p>
+There is a thing that the game currently can't cover: you can't play it alone
+as a short relief from your troubles because it doesn't have any AI. However
+one is already underway hopefully to be released in future versions.
+</p>
+
+<hr>
+<center><h2><a name="ui">User interface</a></h2></center>
+<p>
+Unlike it's predecessor ZIS has a <b>command line styled interface</b> so in
+order to play it it is very useful to read this first!  On most occasions it
+reads a single character and acts immediately.  Sometimes, e.g. for entering
+numbers it reads until you press enter.  Note that in commands of the gameplay
+itself (e.g. <b>s</b>end ships) echo of your input is supressed so that the
+other players won't see what you do (unless they watch carefully what you
+press ;-).  So don't be surprised if nothing appears when you type, it's all
+right.
+</p>
+<p>
+This version features a menu which makes the interface quite intuitive.  It's
+brought up by F10 or Escape.  When in trouble, F1 or h or ? brings up the
+help...
+</p>
+
+<h3><a name="gcs">Game commands</a></h3>
+<dl compact>
+
+
+
+
+
+<dt><strong><kbd>p</kbd>:</strong>
+<dd>
+shows you the properties of a given planet but only if it
+is controlled by a player, you do not have any intelligence on
+neutral planets.
+
+<dt><strong><kbd>s</kbd>:</strong>
+<dd>
+sends from a planet that is under your control to any other
+planet a given amount of ships of course if you have them on the planet.
+if the planet is under you control they will join the local fleet otherwise
+they will battle with the defense fleet for dominance over the planet.
+
+<dt><strong><kbd>t</kbd>:</strong>
+<dd>
+transfers ships from one planet to another between different players, if the
+planet of the player that the fleet was supposed to reinforce was conquered
+by another player it will make battle with him and if won the planet will
+be owned by the original player.
+
+<dt><strong><kbd>f</kbd>:</strong>
+<dd>
+displays for you the relative forces of the players by comparing the
+absolute amount of ships and the amount of planets for every player (in a
+cute table (-:)
+
+<dt><strong><kbd>a</kbd>:</strong>
+<dd>
+auto-sending from a given planet to a given planet a given amount of ships.
+A planet can auto-send to only 1 planet at a time. The auto-send will be
+executed in the end of each turn, in case the source planet will not have
+enough ships it will send all the remaining ships. you can't know the auto-send
+of a planet which doesn't belong to you. 
+
+<dt><strong><kbd>d</kbd>:</strong>
+<dd>
+calculates the distance between two planets and types the amount of turns it
+will take to a fleet to cover that distance.
+
+<dt><strong><kbd>m</kbd>:</strong>
+<dd>
+switches what is displayed on the map for each planet.  Normally you see the
+name but this can show the number of ships or the production instead, which is
+very handy to get an overview of the forces.  Pressing it cycles between the
+three modes.
+
+<dt><strong><kbd>e</kbd>:</strong>
+<dd>
+ends the turn of the current player (another 'enter' to confirm). at the end
+of a cycle of turns it will display all the events of this turn i.e. planets
+being conquered, fleets arrived...
+<dt><strong><kbd>b</kbd>:</strong>
+<dd>
+builds a base on the planet. Depending on the morale of the planet <b>in the time
+of building.
+</dd>
+
+</dl>
+<h3>Special commands (also availiable from the menu!)</h3>
+<dl compact>
+
+<dt><strong><kbd>F10 / Escape</kbd>:</strong>
+<dd>
+shows the menu. 
+
+<dt><strong><kbd>S</kbd>:</strong>
+<dd>
+saves the game into a directory called '~/.zis-saves' or in MS-DOS into a
+subdirectory called 'saves'.
+
+<dt><strong><kbd>L</kbd>:</strong>
+<dd>
+loads a game.
+
+<dt><strong><kbd>R</kbd>:</strong>
+<dd>
+resets all game parameters and goes threw the setup again.
+
+<dt><strong><kbd>G</kbd>:</strong>
+<dd>
+generates a new map with the same players
+
+<dt><strong><kbd>Q</kbd>:</strong>
+<dd>
+quits the game.
+
+<dt><strong><kbd>F1 / H / ?</kbd>:</strong>
+<dd>
+shows a built-in help of game commands.
+<dt><strong><kbd>C</kbd>:</strong>
+<dd>
+Credits.<br>
+Shows an animated flag of Israel made by hand (Barky) and drawn by Eli.
+</dd>
+
+</dl>
+<h3><a name="opt">Options</a></h3>
+<p>
+A recent adavance in the game led to <b>Options</b>.
+<br>
+There are currently two options:
+<dl>
+<dt><b>colors</b></dt>
+<dd>This option will turn on colors when on and turn off colors when off
+even if your terminal supports them.
+</dd>
+<dt><b>animations</b></dt>
+<dd>
+this option will enable popup animations when on and turn them off if off.
+<b>All of them</b>
+</dd>
+</dl>
+</p>
+<hr>
+<center><h2><a name="crs">Credits</a></h2></center>
+<dl>
+<dt>Lead programmer: <dd><b>Eli Cherniavsky.</b>
+<dt>Technical adviser: <dd><b>Beni Cherniavsky.</b>
+<dt>Graphical designer: <dd><b>Barak Katzir.</b>
+<dt>Campign Writer: <dd><b>Tomer Razikovetsky</b>
+</dl>
+
+<hr>
+<center><h2><a name="srs">System requirements</a></h2></center>
+<p>
+Any computer that has the curses (with panels and menus) and some basic posix
+functions (chdir, gettimeofday, etc. - nothing really hard).
+<p>
+Tested on Linux, SunOS, Windows.
+</p>
+
+<hr>
+<center><h2><a name="tdo">To-do</a></h2></center>
+<ul type="disc">
+<li> Opening movie (soon).
+<li> Maps that come with the game (soon).
+<li> AI (version 2.x).
+<li> Single player campaign (version 2.x).
+<li> campaign script... (version 2.x).
+</ul>
+
+</body>
+</html>
